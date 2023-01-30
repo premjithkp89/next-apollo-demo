@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @apollo/server/express4
+
+PATH: 
+  C:\Users\u52524\AppData\Roaming\npm;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\PuTTY\;C:\Windows\CCM;C:\Program Files (x86)\Common Files\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Common Files\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Python27\;C:\Users\u52524\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\PuTTY\;C:\Users\U52524\AppData\Local\Programs\Python\Python310\python.exe;C:\Users\u52524\AppData\Local\Microsoft\WindowsApps;C:\Users\u52524\AppData\Local\Yarn\bin;"; C:\Program Files\node.js\";C:\Users\u52524\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\U52524\AppData\Local\Programs\Python\Python310\
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@apollo%2fserver/express4: Request "https://registry.npmjs.org/@apollo%2fserver/express4" returned a 405
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66106:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "faker-graphql",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "node server",
+      "watch": "nodemon --watch './**/*.{ts,graphql}' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/server.ts",
+      "dev": "tsc-watch --onSuccess \"npm run watch\""
+    },
+    "dependencies": {
+      "@graphql-tools/schema": "^9.0.14",
+      "@types/graphql": "^14.5.0",
+      "@apollo/server": "^4.3.1",
+      "body-parser": "^1.18.2",
+      "cors": "^2.8.4",
+      "express": "^4.16.2",
+      "express-graphql": "^0.12.0",
+      "faker": "^4.1.0",
+      "graphql": "14",
+      "nodemon": "^2.0.20"
+    },
+      "type": "module",
+      "exports": "./dist/index.js"
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
