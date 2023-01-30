@@ -19,7 +19,7 @@ jobs:
       - image: cimg/node:16.10
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
-    working_directory: ~/project
+    working_directory: ~/server
     steps:
       # Checkout the code as the first step.
       
@@ -29,6 +29,7 @@ jobs:
       
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
+          app-dir: ~/server
           pkg-manager: yarn
       - run:
           name: Run tests
