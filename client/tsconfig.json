@@ -12,8 +12,9 @@
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
+    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
@@ -21,9 +22,17 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/Name.js", "components/Name.js", "pages/index.js", "components/Name.js", "pages/index.js"  ],
+    "**/*.tsx",
+    "components/Name.test.tsx",
+    "pages/index.tsx",
+    "components/Name.tsx",
+    "pages/index.tsx"
+  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+}
 }
