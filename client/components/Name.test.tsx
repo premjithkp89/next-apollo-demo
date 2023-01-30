@@ -1,21 +1,18 @@
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
-import App from '../pages/index'
+import App from "../pages/index";
 import { MockedProvider } from "@apollo/client/testing";
-
 
 const mocks = [];
 
 describe("<Name>", () => {
-  beforeEach(()=>{
+  beforeEach(() => {
     render(
       <MockedProvider mocks={mocks} addTypename={false}>
         <App />
-        </MockedProvider>
+      </MockedProvider>
     );
-
-  })
-
+  });
 
   it("should render User list Grid", () => {
     expect(screen.getByTestId("user-grid")).toBeInTheDocument();

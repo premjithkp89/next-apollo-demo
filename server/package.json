@@ -1,12 +1,12 @@
 {
-  "name": "faker-graphql",
+  "type": "module",
+  "name": "server-graphql",
   "version": "1.0.0",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "build": "tsc",
-    "serve": "yarn run build && node dist/server.js",
-    "start": "node dist/server.js",
+    "serve": "yarn run build && node dist/server.js --experimental-specifier-resolution=node",
+    "start": "node dist/server.js --experimental-specifier-resolution=node",
     "deploy": "yarn run build && gcloud app deploy"
   },
   "dependencies": {
@@ -17,7 +17,6 @@
     "casual": "^1.6.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "faker": "^6.6.6",
     "graphql": "^16.6.0",
     "ts-node": "^10.9.1"
   },
